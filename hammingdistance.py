@@ -3,15 +3,15 @@ def hammingdistance(string1,string2):
         raise ValueError("Strings must have the same size")
     bytes1 = bytes(string1,'ascii')
     bytes2 = bytes(string2,'ascii')
-    bits1=b''
-    bits2=b''
+    bits1=''
+    bits2=''
     for byte in bytes1:
         bits1+=format(byte,'b').zfill(8)
     for byte in bytes2:
         bits2+=format(byte,'b').zfill(8)
 
-    print(bits1)
-    print(bits2)
+    #print(bits1)
+    #print(bits2)
     distance = 0
 
     len(bits1)
