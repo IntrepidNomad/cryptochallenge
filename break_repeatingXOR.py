@@ -31,10 +31,10 @@ from hammingdistance import hammingdistance
     blocks=[]
 #    data_stream.read(4)
     for keylength in keysize_totry:
-        i=0# break ciphertext into blocks
+        # break ciphertext into blocks
         while (data_stream):
             blocks.append(data_stream.read(keylength).ljust(keylength,b'\0'))
-            i+=1
+            
 
         # transpose blocks
         transposed_blocks = []
