@@ -17,7 +17,7 @@ def break_repeatingXOR(base64_strings):
         chunk3 = unbased[keysize*2:keysize*3-1].ljust(keysize,'\0')
         chunk4 = unbased[keysize*3:keysize*4-1].ljust(keysize,'\0')
         distance1=hammingdistance(chunk1,chunk2)
-        distance2=hammingdistance(chunk2,chunk3)
+        distance2=hammingdistance(chunk2,chunk3)key
         distance3=hammingdistance(chunk3,chunk4)
         distance4=hammingdistance(chunk4,chunk1)
         average_distance = (distance1+distance2+distance3+distance4)/4
