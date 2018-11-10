@@ -11,4 +11,3 @@ def get_english_score(input):
         'y': .01974, 'z': .00074, ' ': .13000
         }
         return sum([character_frequencies.get(chr(byte), 0) for byte in input.lower()])
-get_english_score(b'asss%3## ')
