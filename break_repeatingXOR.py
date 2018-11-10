@@ -36,7 +36,7 @@ from hammingdistance import hammingdistance
 #data_stream.read(2)
         # break ciphertext into blocks
         while True:
-            block_data= data_stbytesream.read(keylength)
+            block_data= data_stream.read(keylength)
             if block_data ==b'':
                 break
             else:
