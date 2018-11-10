@@ -11,7 +11,7 @@ unbased = data
 decoded_list=[]
 import binascii
 #def break_repeatingXOR(base64_strings):
-    unbased = base64.b64decode(base64_strings)
+    #unbased = base64.b64decode(base64_strings)
     key_distances=[]
 from hammingdistance import hammingdistance
     for keysize in range(2,41):
